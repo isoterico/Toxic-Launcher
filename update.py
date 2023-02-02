@@ -20,5 +20,5 @@ def update():
       print("[*]-[Info]-[*]: Avvio del Tool in corso...")
       time.sleep(2)
       call(["sh", "-c", "cd ToxicSecTools"])
-      call(["sh", "-c", "python3 ToxicSec.py"])
+      call(["sh", "-c", "python3 install.py"])
 update()
