@@ -10,11 +10,11 @@ def update():
   call(["sh", "-c", "sudo rm -r ToxicSecTools"])
   dir = 'ToxicSecTools'
   if not os.path.exists(dir): # if the directory does not exist
-      call(["sh", "-c", "git clone https://github.com/isoterico/ToxicSecTools.git"]) # make the directory
+      call(["sh", "-c", "git clone https://github.com/isoterico/Toxic-Launcher.git"]) # make the directory
   else: # the directory exists
       #remove a folder
       call(["sh", "-c", "sudo rm -r ToxicSecTools"])
-      call(["sh", "-c", "git clone https://github.com/isoterico/ToxicSecTools.git"]) # make the directory
+      call(["sh", "-c", "git clone https://github.com/isoterico/Toxic-Launcher.git"]) # make the directory
       print("[*]-[Info]-[*]: Aggiornamento completato con successo!.")
       time.sleep(1)
       print("[*]-[Info]-[*]: Avvio del Tool in corso...")
