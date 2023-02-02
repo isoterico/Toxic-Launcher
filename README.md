@@ -103,7 +103,8 @@ Il tool verrà aggiornato, pertanto rimanete sintonizzati al repository.
 Istruzioni per scaricare ed installare il Tool.
 
 ```sh
-git clone https://github.com/isoterico/ToxicSecTools
+git clone https://github.com/isoterico/Toxic-Launcher
+python3 update.py
 cd ToxicSecTools
 sudo apt install < requirements.txt
 python3 install.py
