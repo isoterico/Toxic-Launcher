@@ -145,8 +145,9 @@ def menu():
   print("             ┏══════════════════════════════════════════════════════════════════┓")
   print("              『1』│ ᑭᕼIՏᕼIᑎᘜ")
   print("              『2』│ ᗴ᙭ᑭᒪOIT")
-  print("              『3』│ ᗪᗪOՏ") 
-  print("              『4』│ OՏIᑎT")
+  print("              『3』│ ᗪᗪOՏ")
+  print("              『4』│ OՏIᑎT | !Work in Progress!")
+  print("              『5』│ ᑌᑭᘜᖇᗩᗪᗴ ᒪᗩᑌᑎᑕᕼᗴᖇ")
   print("             ┗══════════════════════════════════════════════════════════════════┛")
 
 #BANNER DDOS
@@ -346,9 +347,16 @@ def scelta1():
       time.sleep(2)
       subprocess.run(["clear"])
       scelta1()
+  if choose == str(4):
+      subprocess.run(["clear"])
+      print("[*]-[Info]-[*]: Tools attualmente non presente... Aggiorna il Launcher") 
+      print("                oppure Attendi nuovo aggiornamento.")
+      time.sleep(2)
+      scelta1()
   if choose == str(5):
       print("[*]-[Info]-[*]: Aggiornamento del tools in corso...")
-      call(["sh", "-c", "cd .. && python3 update.py"])
+      call(["sh", "-c", "cd .."])
+      call(["sh", "-c", "python3 update.py"])
       subprocess.run(["clear"])
       print("[*]-[Info]-[*]: Aggiornamento completato con successo!")
       time.sleep(0.5)
